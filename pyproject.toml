@@ -1,0 +1,11 @@
+# https://mypy.readthedocs.io/en/stable/config_file.html
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+
+# https://docs.astral.sh/ruff/configuration/
+[tool.ruff]
+fix = true
+indent-width = 4
+line-length = 100
+target-version = "py311"
