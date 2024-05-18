@@ -15,6 +15,7 @@ RUN useradd -ms /bin/bash gradio
 USER gradio
 EXPOSE 8080
 WORKDIR /home/gradio
+ENV PATH="/home/gradio/.local/bin:${PATH}"
 
 COPY app.py .
 COPY files ./files
