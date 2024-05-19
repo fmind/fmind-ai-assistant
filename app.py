@@ -1,23 +1,21 @@
-"""Answer questions about my background using natural language.."""
+"""Answer questions about my background in natural language.."""
 
 # %% IMPORTS
 
-import os
 import logging
+import os
 import typing as T
 
 import gradio as gr
-
 import vertexai
 from vertexai.generative_models import GenerativeModel
-
 
 # %% CONFIGS
 
 # %% - Models
 
 MODEL_NAME = os.environ["MODEL_NAME"]
-MODEL_SYSTEM= """
+MODEL_SYSTEM = """
 You are Fmind AI Assistant, designed to provide concise and professional information about Médéric Hurier (also known as Fmind). Your primary focus is to answer questions regarding his background, experience, and expertise.
 
 Please use the information below (in Markdown format) as your knowledge base. If a question falls outside of this scope or is unrelated to Médéric Hurier, politely decline to answer and suggest that the user rephrase or provide a different question.
@@ -120,5 +118,3 @@ demo = gr.ChatInterface(
 
 if __name__ == "__main__":
     demo.launch()
-
-# %%

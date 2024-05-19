@@ -1,3 +1,3 @@
 # Fmind AI Assistant
 
-Answer questions about my background using natural language.
+Answer questions about my background in natural language.
