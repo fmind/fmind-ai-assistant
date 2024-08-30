@@ -23,8 +23,7 @@ Please use the information below (in Markdown format) as your knowledge base. If
 MODEL_CONTEXT = open("files/linkedin.md").read()
 MODEL_CONFIG = {
     "max_output_tokens": 1000,
-    "temperature": 1,
-    "top_p": 0.95,
+    "temperature": 0.0,
 }
 
 # %% - Logging
@@ -86,24 +85,26 @@ model = genai.GenerativeModel(
 # %% FUNCTIONS
 
 
-def answer(message: str, history: list[tuple[str, str]]) -> T.Iterable[str]:
-    """Answer questions about my background using natural language.."""
-    # messages
-    messages = []
-    for user, assistant in history:
-        messages.append({"role": "user", "parts": [{"text": user}]})
-        messages.append({"role": "model", "parts": [{"text": assistant}]})
-    messages.append({"role": "user", "parts": [{"text": message}]})
+def answer(message: str, history: list[tuple[str, str]]) -> str:
+    """Answer questions about my background using natural language."""
+    # contents
+    contents = []
+    for user_text, model_text in history:
+        contents.append(genai.Content(role="user", parts=[genai.Part.from_text(user_text)]))
+        contents.append(genai.Content(role="model", parts=[genai.Part.from_text(model_text)]))
+    contents.append(genai.Content(role="user", parts=[genai.Part.from_text(message)]))
     # response
-    response = model.generate_content(message, stream=True)
-    # content
-    content = ""
-    for chunk in response:
-        content += chunk.text
-        yield content
-    # usage
-    usage = str(chunk.usage_metadata).replace("\n", "; ")
-    logging.info("Usage: %s", usage)
+    response = model.generate_content(contents=contents)
+    if response.prompt_feedback:
+        logging.warning("Prompt feedback: %s", response.prompt_feedback)
+    if response.usage_metadata:
+        logging.info(
+            "Usage metadata: total tokens=%s, inputs tokens=%s, output tokens=%s",
+            response.usage_metadata.total_token_count,
+            response.usage_metadata.prompt_token_count,
+            response.usage_metadata.candidates_token_count,
+        )
+    return response.text
 
 
 # %% INTERFACES
