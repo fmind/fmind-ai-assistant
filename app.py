@@ -8,7 +8,7 @@ import typing as T
 
 import gradio as gr
 import vertexai
-from vertexai.generative_models import GenerativeModel
+import vertexai.generative_models as genai
 
 # %% CONFIGS
 
@@ -71,10 +71,16 @@ logging.basicConfig(
 
 vertexai.init(project=PROJECT_ID, location=PROJECT_LOCATION)
 
-model = GenerativeModel(
+model = genai.GenerativeModel(
     model_name=MODEL_NAME,
     generation_config=MODEL_CONFIG,
     system_instruction=[MODEL_SYSTEM, MODEL_CONTEXT],
+    safety_settings={
+        genai.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: genai.HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+        genai.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: genai.HarmBlockThreshold.BLOCK_ONLY_HIGH,
+        genai.HarmCategory.HARM_CATEGORY_HARASSMENT: genai.HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+        genai.HarmCategory.HARM_CATEGORY_HATE_SPEECH: genai.HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+    },
 )
 
 # %% FUNCTIONS
