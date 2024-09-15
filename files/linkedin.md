@@ -11,7 +11,7 @@
 - Position: Senior MLOps Engineer at Decathlon Technology
 - Education: PhD in Artificial Intelligence and Computer Security from the University of Luxembourg
 - Headline: Freelancer: AI/ML/MLOps Engineer | Data Scientist | Python Developer | MLOps Community Organizer | MLOps Coding Course Author | MLflow Ambassador | Hacker | PhD
-- Note: I'm not available to work on new missions until the 31st of December 2025.
+- Availability: I'm not available to work on new missions until the 31st of December 2025.
 
 ## Websites
 
