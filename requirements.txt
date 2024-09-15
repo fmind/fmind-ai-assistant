@@ -1,2 +1,2 @@
-google-cloud-aiplatform==1.51.0
-gradio==4.29.0
+google-cloud-aiplatform==1.66.0
+gradio==4.44.0

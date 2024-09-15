@@ -1,4 +1,4 @@
-"""Container tasks for pyinvoke."""
+"""Docker tasks for pyinvoke."""
 
 # %% IMPORTS
 

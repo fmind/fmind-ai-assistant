@@ -27,13 +27,19 @@ def ruff(ctx: Context) -> None:
 
 
 @task
+def gradio(ctx: Context) -> None:
+    """Clean the gradio cache."""
+    ctx.run("rm -rf gradio_cached_examples/")
+
+
+@task
 def python(ctx: Context) -> None:
     """Clean python files and folders."""
     ctx.run("find . -type f -name '*.py[co]' -delete")
     ctx.run("find . -type d -name __pycache__ -delete")
 
 
-@task(pre=[mypy, ruff, python], default=True)
+@task(pre=[mypy, ruff, gradio, python], default=True)
 def all(_: Context) -> None:
     """Run all clean tasks."""
 

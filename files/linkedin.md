@@ -10,8 +10,8 @@
 - Industry: Technology, Information and Internet
 - Position: Senior MLOps Engineer at Decathlon Technology
 - Education: PhD in Artificial Intelligence and Computer Security from the University of Luxembourg
-- Headline: Freelancer: AI/FM/MLOps Engineer | Data Scientist | MLOps Community Organizer | MLflow Ambassador | Hacker | PhD
-- Note: I'm not available to work on new missions until the 31st of December 2024.
+- Headline: Freelancer: AI/ML/MLOps Engineer | Data Scientist | Python Developer | MLOps Community Organizer | MLOps Coding Course Author | MLflow Ambassador | Hacker | PhD
+- Note: I'm not available to work on new missions until the 31st of December 2025.
 
 ## Websites
 
@@ -39,12 +39,24 @@ I now work as a freelancer in Luxembourg, and I can carry out missions remotely 
 - Period: September 2022 - Present
 - Location: Luxembourg (Hybrid)
 - Tasks:
-    - Design and implement Decathlon's MLOps platform on top of Databricks and AWS cloud systems.
+    - Design and implement Decathlon's MLOps platform on top of Databricks and AWS cloud services.
     - Create code templates and documentations to embed best practices into development processes.
-    - Animate Decathlon's MLOps Community through discussions, resources sharing, and maturity matrix.
     - Provide solutions and guidelines to steer the adoption of AI/ML Monitoring/Observability principles.
+    - Animate Decathlon's MLOps Community through discussions, resources sharing, and maturity matrix.
     - Bring Generative AI capabilities to data scientists and ML engineers through AWS Bedrock/Databricks.
+    - Introduce a data lake zone for AI/ML projects to govern and normalize machine-learned based datasets.
+    - Identify and deploy Generative AI solutions to boost the productivity of the 100k collaborators of Decathlon.
+    - Participate in the architecture designs and reviews of the new machine-learning projects (technical validation).
 - Skills: Artificial Intelligence (AI) · Apache Airflow · AWS SageMaker · MLflow · Python · ChatGPT · Git · Docker · Kubernetes · Méthodes agiles · AWS Bedrock · Machine Learning · DataBricks · MLOps · Jira · Apache Spark · Terraform
+
+## Technical Trainer & Speaker for On Train
+
+- Title: Technical Training & Speaker
+- Company: On Train - Freelance
+- Period: August 2024 - Present
+- Location: Luxembourg (Remote)
+- Tasks: Personalised Trainings and Workshops on MLOps, Machine Learning and Generative AI
+- Skills: MLOps · Machine Learning · Artificial Intelligence (AI) · Generative AI · Data Science
 
 ## Mentor for Data Scientist and AI/ML Engineer for OpenClassrooms
 
@@ -736,6 +748,44 @@ I now work as a freelancer in Luxembourg, and I can carry out missions remotely 
 
 # Publications
 
+## MLOps Package Template: Turbocharge the Creation of AI/ML Projects ⚡
+
+- Publisher: MLOps Community
+- Publication date: August 12, 2024
+- Link: https://home.mlops.community/public/blogs/mlops-package-template-turbocharge-the-creation-of-aiml-projects
+
+The world of AI/ML is evolving at an electrifying pace, and MLOps has emerged as a cornerstone for translating innovative ideas into production-ready solutions. Yet, setting up a robust MLOps project can feel like navigating a labyrinth of tools, configurations, and best practices. This is where the Cookiecutter MLOps Package steps in, offering a powerful code template to jumpstart your MLOps journey, accelerating your development process and ensuring a solid foundation for success.
+
+## MLOps Coding Course: Mastering Observability for Reliable ML
+
+- Publisher: MLOps Community
+- Publication date: August 5, 2024
+- Link: https://home.mlops.community/public/blogs/mlops-coding-course-mastering-observability-for-reliable-ml
+
+In the last blog article, we constructed a robust and production-ready MLOps codebase. But the journey doesn’t end with deployment. The real test begins when your model encounters the dynamic and often unpredictable world of production. That’s where Observability, the focus of Chapter 7 in the MLOps Coding Course, takes center stage.
+
+This article dives deep into the essential tools and practices for achieving comprehensive observability in your ML projects. We’ll unravel key concepts, showcase practical code examples from the accompanying MLOps Python Package, and explore the benefits of integrating industry-leading solutions like MLflow.
+
+## MLOps Coding Course: Bridging the Gap Between Data Scientists and Machine Learning Engineers
+
+- Publisher: MLOps Community
+- Publication date: June 11, 2024
+- Link: https://home.mlops.community/public/blogs/mlops-coding-course-bridging-the-gap-between-data-scientists-and-machine-learning-engineers
+
+As a Freelance MLOps Engineer working for Decathlon Digital, I’ve witnessed firsthand the growing need for data scientists to transition into machine learning engineers. The increasing complexity of AI/ML projects demands more than just modeling skills; it requires a deep understanding of software development practices to ensure that models can be deployed, scaled, and maintained effectively in production environments.
+
+This observation sparked the creation of the MLOps Coding Course, an open-source courses specifically designed to bridge the gap between data science and software engineering. It’s a comprehensive guide that offers practical knowledge and tools to build, deploy, and manage production-ready AI/ML systems.
+
+## MLOps Coding Course
+
+- Publisher: Fmind.dev and MLOps Community
+- Publication date: May 22, 2024
+- Link: https://mlops-coding-course.fmind.dev/
+
+The MLOps Coding Course is designed to integrate robust software development practices with cutting-edge data science techniques. This course is tailored for both beginners who are just starting their journey and experienced professionals looking to enhance their skills in managing and executing AI and machine learning projects using Python. Here, you will learn through a hands-on approach that emphasizes real-world applications and efficient project execution.
+
+We are excited to have you join us on this journey to mastering MLOps. By the end of this course, you will be well-equipped to manage and execute ML projects with a high degree of professionalism and skill. Let’s get started on transforming your data science capabilities with effective MLOps practices!
+
 ## Make your MLOps code base SOLID with Pydantic and Python’s ABC
 
 - Publisher: MLOps Community
@@ -877,6 +927,18 @@ There is generally a lack of consensus in Antivirus (AV) engines' decisions on a
 To that end, we propose a set of metrics that quantitatively describe the different dimensions of this lack of consensus. We show how our metrics can bring important insights by using the detection results of 66 AV products on 2 million Android apps as a case study.  Our analysis focuses not only on AV binary decision but also on the notoriously hard problem of labels that AVs associate with suspicious files, and allows to highlight biases hidden in the collection of a malware ground truth---a foundation stone of any machine learning-based malware detection approach.
 
 # Projects
+
+## Bromate
+
+- Date: September 2024 - Present
+- Description: Web browser automation through agentic workflows
+- Link: https://github.com/fmind/bromate
+
+## Cookiecutter MLOps Package
+
+- Date: August 2024 - Present
+- Description: Start building and deploying Python packages and Docker images for MLOps tasks.
+- Link: https://github.com/fmind/cookiecutter-mlops-package
 
 ## Keep It Simple Scribe
 
