@@ -1,4 +1,4 @@
-"""Docker tasks for pyinvoke."""
+"""Docker tasks of the project."""
 
 # %% IMPORTS
 
@@ -13,6 +13,16 @@ DOCKER_TAG = "fmind-ai-assistant:latest"
 
 
 @task
+def requirements(ctx: Context) -> None:
+    """Export the project requirements file."""
+    ctx.run(
+        "uv export --format=requirements-txt --no-dev "
+        "--no-hashes --no-editable --no-emit-project "
+        f"--output-file=requirements.txt"
+    )
+
+
+@task(pre=[requirements])
 def build(ctx: Context) -> None:
     """Build the docker image."""
     ctx.run(f"docker build -t {DOCKER_TAG} .")

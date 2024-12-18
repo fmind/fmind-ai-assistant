@@ -1,4 +1,4 @@
-# Profile
+# LinkedIn Profile
 
 ## Overview
 
@@ -10,7 +10,7 @@
 - Industry: Technology, Information and Internet
 - Position: Senior MLOps Engineer at Decathlon Technology
 - Education: PhD in Artificial Intelligence and Computer Security from the University of Luxembourg
-- Headline: Freelancer: AI/ML/MLOps Engineer | Data Scientist | Python Developer | MLOps Community Organizer | MLOps Coding Course Author | MLflow Ambassador | Hacker | PhD
+- Headline: Freelancer: AI/ML/MLOps/LLMOps/AgentOps Engineer | Data Scientist | Python Developer | MLOps Community Organizer | MLOps Coding Course Author | MLflow Ambassador | Hacker | PhD
 - Availability: I'm not available to work on new missions until the 31st of December 2025.
 
 ## Websites
@@ -746,7 +746,39 @@ I now work as a freelancer in Luxembourg, and I can carry out missions remotely 
 - Issued: Jan 2014
 - Score: 975/990
 
+# Recommendations
+
+## Daniel POLOMBO
+
+- Relation: Daniel worked with Médéric on different teams at Decathlon
+- Activity: Freelance Cloud Architect
+- Date: November 27, 2024
+
+Working with Médéric on several AI/ML projects has been a fantastic experience. His expertise in structuring our AI/ML practice was evident from the start, and his commitment to cross-team collaboration and integration with the company’s best practices ensured the creation of solid, future-proof foundations for the platform.
+
+Beyond his expertise, what made working with him a real pleasure is how easygoing and approachable he is, considering other people’s issues and always willing to share his deep knowledge of AI. Médéric is definitely a top choice if you need an AI/ML/MLOps expert!
+
+## Camille BRODIN
+
+- Relation: Camille was a student of Médéric during her mentorship at OpenClassrooms
+- Activity: Data Scientist
+- Date: March 15, 2024
+
+I had the privilege of being mentored by Médéric for a year during my training as a Data Scientist. Médéric has a subtle mastery of a vast range of tools in the fields of data science and data engineering. He understands their advantages and disadvantages, while constantly staying informed about new emerging techniques.
+
+I was impressed by the depth of his knowledge in MLOps; Médéric is a true expert who possesses a critical perspective on existing data processing techniques, which allows him to be the most efficient and relevant in solving all types of problems. It is easy to recognize Médéric's several years of experience as an AI/ML/MLOps/LLMOps engineer; his ability to instantly identify problems and propose relevant solutions is almost instinctive.
+
+A very good communicator, his ability to explain complex concepts in simple terms is remarkable. I am certain that Médéric will excel in his future challenges and projects, and I highly recommend him for any opportunity in data science.
+
 # Publications
+
+## Taming Python Installation with Pyenv for AI/ML and MLOps Projects
+
+- Publisher: Medium
+- Publication date: October 8, 2024
+- Link: https://fmind.medium.com/taming-python-installation-with-pyenv-for-ai-ml-and-mlops-projects-00cb0bec09b4
+
+Python is the beloved language of data scientists, machine learning engineers, and anyone dabbling in the fascinating world of AI. But with its ever-evolving landscape of versions and dependencies, managing your Python environment can quickly turn into a chaotic nightmare. Fear not, fellow data wizards! This blog post introduces you to pyenv, your secret weapon for taming the Python beast and ensuring a smooth, reproducible, and headache-free development experience.
 
 ## MLOps Package Template: Turbocharge the Creation of AI/ML Projects ⚡
 
@@ -934,11 +966,17 @@ To that end, we propose a set of metrics that quantitatively describe the differ
 - Description: Web browser automation through agentic workflows
 - Link: https://github.com/fmind/bromate
 
+Bromate leverages the power of large language models (LLMs), specifically Google's Gemini, to understand user requests expressed in natural language and translate them into a series of actions that automate web browsing tasks.
+
+It utilizes Selenium for browser control and interaction, offering a seamless way to automate complex workflows within a web browser environment.
+
 ## Cookiecutter MLOps Package
 
 - Date: August 2024 - Present
 - Description: Start building and deploying Python packages and Docker images for MLOps tasks.
 - Link: https://github.com/fmind/cookiecutter-mlops-package
+
+The template provides a robust foundation for building, testing, packaging, and deploying Python packages and Docker Images tailored for MLOps tasks.
 
 ## Keep It Simple Scribe
 

@@ -1,6 +1,31 @@
+# https://docs.astral.sh/uv/reference/settings/
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+
+# PROJECT
+
+[project]
+name = "fmind-ai-assistant"
+version = "3.0.0"
+description = "Answer questions about my background in natural language."
+authors = [{ name = "Médéric HURIER", email = "github@fmind.dev" }]
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE.txt" }
+dependencies = ["google-genai>=0.2.2", "gradio>=5.9.0"]
+
+# DEPENDENCIES
+
+[dependency-groups]
+dev = ["invoke>=2.2.0", "ipykernel>=6.29.5", "mypy>=1.13.0", "ruff>=0.8.3"]
+
+# TOOLS
+
+[tool.uv]
+package = false
+
 # https://mypy.readthedocs.io/en/stable/config_file.html
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.12"
 ignore_missing_imports = true
 
 # https://docs.astral.sh/ruff/configuration/
@@ -8,4 +33,4 @@ ignore_missing_imports = true
 fix = true
 indent-width = 4
 line-length = 100
-target-version = "py311"
+target-version = "py312"

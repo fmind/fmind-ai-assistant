@@ -1,4 +1,4 @@
-"""Run tasks for the project."""
+"""Run tasks of the project."""
 
 # %% IMPORTS
 
@@ -11,7 +11,7 @@ from invoke.context import Context
 @task
 def app(ctx: Context) -> None:
     """Run the main application."""
-    ctx.run("gradio app.py")
+    ctx.run("UV_ENV_FILE=.env uv run gradio app.py")
 
 
 @task(pre=[app], default=True)

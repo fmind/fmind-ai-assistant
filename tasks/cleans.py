@@ -1,4 +1,4 @@
-"""Clean tasks for the project."""
+"""Clean tasks of the project."""
 
 # %% IMPORTS
 
