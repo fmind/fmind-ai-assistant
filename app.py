@@ -127,4 +127,6 @@ demo = gr.ChatInterface(
     show_progress="hidden",
     concurrency_limit=None,
 )
-demo.launch(show_api=False, favicon_path=INTERFACE_FAVICON)
+
+if __name__ == "__main__":
+    demo.launch(show_api=False, favicon_path=INTERFACE_FAVICON)
