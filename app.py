@@ -59,8 +59,7 @@ INTERFACE_DESCRIPTION = (
 # %% - Logging
 
 logging.basicConfig(
-    level=getattr(logging, LOGGING_LEVEL),
-    format="[%(asctime)s][%(levelname)s] %(message)s",
+    level=getattr(logging, LOGGING_LEVEL), format="[%(asctime)s][%(levelname)s] %(message)s"
 )
 
 # %% - Generative AI
