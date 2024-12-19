@@ -89,29 +89,31 @@ stream = functools.partial(
 
 def chat(message: str, history: list[dict[str, str]]) -> T.Iterator[str]:
     """Answer the user message with generate AI and contents."""
-    contents = []
-    for previous in history:
-        text = previous["content"]
-        role = "user" if previous["role"] == "user" else "model"
-        content = types.Content(role=role, parts=[types.Part.from_text(text)])
-        contents.append(content)
-    contents.append(types.Content(role="user", parts=[types.Part.from_text(message)]))
-    response = stream(contents=contents)
-    answer = io.StringIO()
-    for i, chunk in enumerate(response):
-        if usage := chunk.usage_metadata:
-            logging.info(
-                "[%s] Usage metadata: total tokens=%s (inputs tokens=%s, output tokens=%s)",
-                i,
-                usage.total_token_count,
-                usage.prompt_token_count,
-                usage.candidates_token_count,
-            )
-        if feedback := chunk.prompt_feedback:
-            logging.warning("[%s] Prompt feedback: %s", i, feedback)
-        answer.write(chunk.text)
-        yield answer.getvalue()
-
+    try:
+        contents = []
+        for previous in history:
+            text = previous["content"]
+            role = "user" if previous["role"] == "user" else "model"
+            content = types.Content(role=role, parts=[types.Part.from_text(text)])
+            contents.append(content)
+        contents.append(types.Content(role="user", parts=[types.Part.from_text(message)]))
+        response = stream(contents=contents)
+        answer = io.StringIO()
+        for i, chunk in enumerate(response):
+            if usage := chunk.usage_metadata:
+                logging.info(
+                    "[%s] Usage metadata: total tokens=%s (inputs tokens=%s, output tokens=%s)",
+                    i,
+                    usage.total_token_count,
+                    usage.prompt_token_count,
+                    usage.candidates_token_count,
+                )
+            if feedback := chunk.prompt_feedback:
+                logging.warning("[%s] Prompt feedback: %s", i, feedback)
+            answer.write(chunk.text)
+            yield answer.getvalue()
+    except Exception as error:
+        raise gr.Error(str(error), title="Assistant Error", duration=None)
 
 # %% INTERFACES
 
