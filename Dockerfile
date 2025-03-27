@@ -1,6 +1,6 @@
 # https://docs.docker.com/engine/reference/builder/
 
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm
+FROM ghcr.io/astral-sh/uv:python3.13-bookworm
 
 ENV GRADIO_SERVER_NAME=0.0.0.0
 ENV GRADIO_SERVER_PORT=8080
@@ -25,4 +25,4 @@ COPY requirements.txt .
 RUN uv venv
 RUN uv pip install -r requirements.txt
 
-CMD uv run app.py
+CMD ["uv", "run", "app.py"]

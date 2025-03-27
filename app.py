@@ -87,16 +87,16 @@ stream = functools.partial(
 # %% FUNCTIONS
 
 
-def chat(message: str, history: list[dict[str, str]]) -> T.Iterator[str]:
-    """Answer the user message with generate AI and contents."""
+def chat(message: str, history: list[dict[str, str]]) -> T.Generator[str, None, None]:
+    """Answer the user message with contents."""
     try:
         contents = []
         for previous in history:
             text = previous["content"]
             role = "user" if previous["role"] == "user" else "model"
-            content = types.Content(role=role, parts=[types.Part.from_text(text)])
+            content = types.Content(role=role, parts=[types.Part.from_text(text=text)])
             contents.append(content)
-        contents.append(types.Content(role="user", parts=[types.Part.from_text(message)]))
+        contents.append(types.Content(role="user", parts=[types.Part.from_text(text=message)]))
         response = stream(contents=contents)
         answer = io.StringIO()
         for i, chunk in enumerate(response):
@@ -114,6 +114,7 @@ def chat(message: str, history: list[dict[str, str]]) -> T.Iterator[str]:
             yield answer.getvalue()
     except Exception as error:
         raise gr.Error(str(error), title="Assistant Error", duration=None)
+
 
 # %% INTERFACES
 

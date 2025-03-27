@@ -10,7 +10,7 @@
 - Industry: Technology, Information and Internet
 - Position: Senior MLOps Engineer at Decathlon Technology
 - Education: PhD in Artificial Intelligence and Computer Security from the University of Luxembourg
-- Headline: Freelancer: AI/ML/MLOps/LLMOps/AgentOps Engineer | Data Scientist | Python Developer | MLOps Community Organizer | MLOps Coding Course Author | MLflow Ambassador | Hacker | PhD
+- Headline: Freelancer: AI/ML Engineer | MLOps | LLMOps | AgentOps | Data Scientist | Python Developer | MLOps Community Organizer | MLOps Coding Course Author | MLflow Ambassador | Hacker | PhD
 - Availability: I'm not available to work on new missions until the 31st of December 2025.
 
 ## Websites
@@ -30,6 +30,8 @@ I'm a professional Machine Learning Engineer, Data Scientist, and MLOps ready to
 
 I now work as a freelancer in Luxembourg, and I can carry out missions remotely in other European countries. You can get in touch with me on LinkedIn or at contact@fmind.dev. I'll be happy to collaborate with you or discuss your favored AI/ML topics in the MLOps Community.
 
+On my website, you can Book a Mentoring Session with me and request a subscription to Talk to MLOps Coding Assistant.
+
 # Experience
 
 ## Senior MLOps Engineer for Decathlon Technology
@@ -39,7 +41,8 @@ I now work as a freelancer in Luxembourg, and I can carry out missions remotely 
 - Period: September 2022 - Present
 - Location: Luxembourg (Hybrid)
 - Tasks:
-    - Design and implement Decathlon's MLOps platform on top of Databricks and AWS cloud services.
+    - Identify key AI/ML tools and best practices for the organization in the AI Tech Office group.
+    - Design and implement MLOps & LLMOps platform on top of Databricks, AWS, and GCP cloud.
     - Create code templates and documentations to embed best practices into development processes.
     - Provide solutions and guidelines to steer the adoption of AI/ML Monitoring/Observability principles.
     - Animate Decathlon's MLOps Community through discussions, resources sharing, and maturity matrix.
@@ -48,6 +51,15 @@ I now work as a freelancer in Luxembourg, and I can carry out missions remotely 
     - Identify and deploy Generative AI solutions to boost the productivity of the 100k collaborators of Decathlon.
     - Participate in the architecture designs and reviews of the new machine-learning projects (technical validation).
 - Skills: Artificial Intelligence (AI) · Apache Airflow · AWS SageMaker · MLflow · Python · ChatGPT · Git · Docker · Kubernetes · Méthodes agiles · AWS Bedrock · Machine Learning · DataBricks · MLOps · Jira · Apache Spark · Terraform
+
+## Mentor for Data Scientists and AI/ML Engineers at Fmind.dev
+
+- Title: Mentor for Data Scientists and AI/ML Engineers
+- Company: Fmind.dev - Freelance
+- Period: September 2024 - Present
+- Location: Luxembourg (Remote)
+- Tasks: Get personalized mentorship in Data Science, Machine Learning, Generative AI, MLOps, LLMOps and Python Development.
+- Skills: MLOps · Machine Learning · Artificial Intelligence (AI) · Generative AI · Data Science
 
 ## Technical Trainer & Speaker for On Train
 
@@ -772,6 +784,55 @@ A very good communicator, his ability to explain complex concepts in simple term
 
 # Publications
 
+## Meet Kate: Your AI-Powered, Live Multimodal Website Assistant 🤖
+
+- Publisher: Medium
+- Publication date: February 15, 2025
+- Link: https://fmind.medium.com/meet-kate-your-ai-powered-live-multimodal-website-assistant-8f64fbad3937
+
+Imagine a world where you can interact with websites using just your voice, having a conversation with an AI assistant that understands your needs and retrieves the information you’re looking for. That’s the world Kate is building.
+Kate is an open-source (MIT), cutting-edge multimodal live assistant that leverages the power of Gemini 2.0 and Vertex AI Search to provide a seamless and engaging user experience. She listens to your questions, understands your intent, and responds with relevant information from the website you’re browsing.
+
+## Lessons Learned from the Gemini Long Context Kaggle Competition 🧠
+
+- Publisher: MLOps Community
+- Publication date: February 7, 2025
+- Link: https://mlops.community/lessons-learned-from-the-gemini-long-context-kaggle-competition-%f0%9f%a7%a0/
+
+The world of Generative AI is constantly evolving, and one of the most exciting frontiers is the expansion of model's long context window. Think of a context window as an AI model's short-term memory - how much information it can hold and process at once. For years, this has been a major limitation. Traditional models could only juggle a few thousand "tokens" (pieces of words), making it hard for them to understand complex documents, long conversations, or intricate codebases.
+
+Then came Google's Gemini 1.5, boasting a game-changing context window of up to 2 million tokens. That's like remembering 16 average novels! 🤯 This breakthrough opens up a world of possibilities, and the recent "Gemini Long Context" Kaggle competition was a chance to explore them. I decided to jump in, and the experience was a fascinating deep dive into the potential - and the current limitations - of this cutting-edge technology.
+
+## Stop Building Rigid AI/ML Pipelines: Embrace Reusable Components for Flexible MLOps
+
+- Publisher: MLOps Community
+- Publication date: January 30, 2025
+- Link: https://home.mlops.community/public/blogs/stop-building-rigid-aiml-pipelines-embrace-reusable-components-for-flexible-mlops-2025-02-18
+
+Let’s be honest, we’ve all been there. You start an MLOps project with the best intentions: crafting a beautiful pipeline that combines several steps. Data ingestion, preprocessing, model training, evaluation, deployment — it all flows seamlessly. At first. But then, reality hits. A new data source emerges. You need to experiment with different preprocessing techniques. Some steps must be reused across several projects. Suddenly, your elegant monolithic pipeline resembles a tangled mess of spaghetti code, complecting what should be executed (the code) and how it should be executed (the pipeline).
+
+The problem? Traditional, monolithic MLOps pipelines are inherently rigid. They couple your individual MLOps steps tightly, making them difficult to modify, reuse, or even understand in the long run. This inflexibility slows down iteration, hinders experimentation, and ultimately, increases the risk of your AI/ML project.
+
+The Solution: Reusable Artifacts and DAGs. What if, instead of a rigid pipeline, we could build our MLOps projects from modular, reusable building blocks? This is where the concept of artifact-driven MLOps comes in.
+
+## Poetry Was Good, Uv Is Better: An MLOps Migration Story
+
+- Publisher: MLOps Community
+- Publication date: January 27, 2025
+- Link: https://mlops.community/poetry-was-good-uv-is-better-an-mlops-migration-story/
+
+As an MLOps Engineer, I’m always on the lookout for tools and technologies that can streamline workflows, boost performance, and enhance the maintainability of MLOps projects. Recently, I made a significant shift in the MLOps Python Package — a repository dedicated to sharing best practices for MLOps in Python. I transitioned from Poetry, a popular dependency management and packaging tool, to Uv, a newer, blazing-fast alternative.
+
+This wasn’t a decision I took lightly. Poetry has served my teammates and me well on many MLOps projects, but Uv’s promise of enhanced speed and stricter adherence to Python Enhancement Proposals (PEPs) piqued our interest. After thoroughly testing it out, we were convinced. The transition is a resounding success, and we’re excited to share our experience and why we believe Uv might be the right choice for your AI/ML projects too.
+
+## Navigating the AI Frontier: Embracing Gemini 2.0 and the Power of Python
+
+- Publisher: LinkedIn
+- Publication date: December 18, 2024
+- Link: https://www.linkedin.com/pulse/navigating-ai-frontier-embracing-gemini-20-power-python-hurier-hhtre/
+
+Learn how to build an AI Assistant using Google's Gemini 2.0 and Gradio. This project leverages RAG, Python, and uv to create a chatbot that answers questions.
+
 ## Taming Python Installation with Pyenv for AI/ML and MLOps Projects
 
 - Publisher: Medium
@@ -960,35 +1021,42 @@ To that end, we propose a set of metrics that quantitatively describe the differ
 
 # Projects
 
-## Bromate
-
-- Date: September 2024 - Present
-- Description: Web browser automation through agentic workflows
-- Link: https://github.com/fmind/bromate
-
-Bromate leverages the power of large language models (LLMs), specifically Google's Gemini, to understand user requests expressed in natural language and translate them into a series of actions that automate web browsing tasks.
-
-It utilizes Selenium for browser control and interaction, offering a seamless way to automate complex workflows within a web browser environment.
-
 ## Cookiecutter MLOps Package
 
 - Date: August 2024 - Present
 - Description: Start building and deploying Python packages and Docker images for MLOps tasks.
 - Link: https://github.com/fmind/cookiecutter-mlops-package
 
-The template provides a robust foundation for building, testing, packaging, and deploying Python packages and Docker Images tailored for MLOps tasks.
-
-## Keep It Simple Scribe
-
-- Date: March 2024 - Present
-- Description: Rewrites blog articles for clarity and simplicity.
-- Link: https://chatgpt.com/g/g-93O8PHtLh-keep-it-simple-scribe
-
 ## MLOps Python Package
 
 - Date: June 2023 - Present
 - Description: Kickstart your MLOps initiative with a flexible, robust, and productive Python package.
 - Link: https://github.com/fmind/mlops-python-package
+
+## Kate: Multimodal Live Assistant
+
+- Date: December 2024 - January 2025
+- Description: Dive into the architecture of Kate, a multimodal live assistant powered by Gemini 2.0.
+- Playlist: https://www.youtube.com/playlist?list=PLPCnNL6Y2PbTzUxmsFICoQj0rx_PmVnk-
+- Link: https://github.com/fmind/kate
+
+## MLOps Digester
+
+- Date: January 2025 - January 2025
+- Description: Let your Pydantic AI Agents digest MLOps information.
+- Link: https://github.com/fmind/mlops-digester
+
+## Bromate
+
+- Date: September 2024 - December 2024
+- Description: Web browser automation through agentic workflows
+- Link: https://github.com/fmind/bromate
+
+## Keep It Simple Scribe
+
+- Date: March 2024 - March 2024
+- Description: Rewrites blog articles for clarity and simplicity.
+- Link: https://chatgpt.com/g/g-93O8PHtLh-keep-it-simple-scribe
 
 ## Fixing the MLOps Survey with ChatGPT
 
